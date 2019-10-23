@@ -21,7 +21,7 @@ function createLIFromWSMessage(msg) {
     var li = document.createElement('li');
     li.style.listStyle = "none";
     li.style.fontSize = 'larger';
-    li.innerHTML = (msg.replace(/ERROR/, "<b style='color: red'>ERROR</b>") || "");
+    li.innerHTML = (msg.data.replace(/ERROR/, "<b style='color: red'>ERROR</b>") || "");
     return li;
 }
 
